@@ -133,11 +133,12 @@ body {
   font-size: 22px;
   line-height: 36px;
   letter-spacing: 1.5px;
+  margin-bottom: 24px;
 }
 .slider__text {
   font-size: 18px;
   color: #d3d2d2;
-  margin: 15px 0;
+  margin: 0 auto 47px;
 }
 .main-btn {
   color: #ffffff;
@@ -155,9 +156,6 @@ body {
   content: "\f105";
   right: -14px;
   top: 4px;
-}
-.slider__btn {
-  margin: 20px auto;
 }
 .owl-carousel {
   position: relative;

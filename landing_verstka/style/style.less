@@ -40,7 +40,6 @@ body {
         letter-spacing: .35px;
         line-height: 24px;
         &:first-child {
-            // margin-right: 34px;
             position: relative;
             .fa__before("\f095");
         }
@@ -139,25 +138,19 @@ body {
         position: relative;
     }
 
-    // &__box {
-    //     position: absolute;
-    //     margin: 0;
-    //     top: 50%;
-    //     transform: translateY(-50%);
-    // }
-
     &__title {
         color: @color-slider__title;
         font-size: 22px;
         line-height: 36px;
         letter-spacing: 1.5px;
+        margin-bottom: 24px;
     }
-}
 
-.slider__text {
-    font-size: 18px;
-    color: @color-header__a;
-    margin: 15px 0;
+    &__text {
+        font-size: 18px;
+        color: @color-header__a;
+        margin: 0 auto 47px;
+    }
 }
 
 .main-btn {
@@ -178,10 +171,6 @@ body {
     }
 }
 
-.slider__btn {
-    margin: 20px auto;
-}
-
 .owl-carousel {
     position: relative;
     height: 100%;
@@ -196,48 +185,50 @@ body {
     height: 497px;
 }
 
-.services__item {
-    background-color: @background-services__item;
-    margin: 30px;
-    text-align: center;
-    padding: 20px 35px 140px;
-    position: relative;
-}
-
-.services__title {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 500;
-    margin: 30px 0;
-    color: @color-services__title;
-}
-
-.services__text {
-    color: @color-services__text;
-    letter-spacing: 0.14px;
-}
-
-.services__footer {
-    position: absolute;
-    bottom: 40px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    left: 0;
-    padding: 0 35px;
-    align-items: center;
-}
-
-.services__a {
-    color: @color-services__a;
-    text-decoration: underline;
-}
-
-.services__main-btn {
-    color: @color-services__main-btn;
-    font-size: 14px;
-    &::after {
-        color: @color-slider__title;
-        top: 8px;
+.services {
+    &__item {
+        background-color: @background-services__item;
+        margin: 30px;
+        text-align: center;
+        padding: 20px 35px 140px;
+        position: relative;
+    }
+    
+    &__title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        margin: 30px 0;
+        color: @color-services__title;
+    }
+    
+    &__text {
+        color: @color-services__text;
+        letter-spacing: 0.14px;
+    }
+    
+    &__footer {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        left: 0;
+        padding: 0 35px;
+        align-items: center;
+    }
+    
+    &__a {
+        color: @color-services__a;
+        text-decoration: underline;
+    }
+    
+    &__main-btn {
+        color: @color-services__main-btn;
+        font-size: 14px;
+        &::after {
+            color: @color-slider__title;
+            top: 8px;
+        }
     }
 }
