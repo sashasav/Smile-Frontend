@@ -1,39 +1,49 @@
-@media screen and (min-width: 600px) {
-  .header__inner {
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width: 350px) {
+  .header__a:first-child {
+    margin-right: 34px;
   }
-  .header__inner_left,
-  .header__inner_right {
-    margin: 0;
+}
+@media screen and (min-width: 600px) {
+  .header__inner::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   .header__inner_left {
-    padding: 8px;
+    float: left;
   }
-  .header__a {
-    display: inline-block;
-    padding-right: 20px;
+  .header__inner_right {
+    float: right;
+  }
+  .header__bottom {
+    margin-bottom: 25px;
+  }
+  .header__nav {
+    position: static;
+    float: right;
   }
   .header__menu-btn {
     display: none;
   }
-  .header__ul {
-    display: block !important;
+  .header ul {
+    display: block;
   }
-  .header__li {
+  .header li {
     display: inline-block;
     border: 1px solid transparent;
+    padding-right: 20px;
+    margin-right: 12px;
   }
-  .header__bottom {
-    padding: 30px 0;
+  .header li:last-child {
+    margin-right: 0;
+  }
+  .header__logo {
+    display: inline;
   }
 }
 @media screen and (min-width: 750px) {
-  .slider__title {
-    margin-top: 80px;
-  }
-  .slider__btn {
-    margin-bottom: 140px;
+  .slider__box {
+    padding: 10px 50px;
   }
   .services__bottom {
     display: flex;
@@ -53,9 +63,6 @@
   }
   .services__main-btn {
     display: block;
-  }
-  .slider__inner {
-    position: relative;
   }
   .owl-prev,
   .owl-next {
@@ -87,15 +94,9 @@
     max-width: 1140px;
     margin: 0 auto;
   }
-  .slider__title {
-    margin-top: 130px;
-  }
   .slider__text {
     margin: 25px auto 45px;
     max-width: 610px;
-  }
-  .slider__btn {
-    margin-bottom: 190px;
   }
   .services__footer {
     display: flex;
