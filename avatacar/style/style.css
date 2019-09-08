@@ -44,7 +44,7 @@ body {
 .header nav ul li a:hover {
   text-decoration: underline;
 }
-.header nav ul li:first-child a::before {
+.header nav ul li.contact a::before {
   position: absolute;
   content: "\f025";
   font-family: "FontAwesome";
@@ -56,7 +56,7 @@ body {
   font-size: 18px;
   text-align: center;
 }
-.header nav ul li:nth-child(2) a::before {
+.header nav ul li.garages a::before {
   position: absolute;
   content: "\f041";
   font-family: "FontAwesome";
@@ -68,7 +68,7 @@ body {
   font-size: 18px;
   text-align: center;
 }
-.header nav ul li:nth-child(3) a::before {
+.header nav ul li.mon-compte a::before {
   position: absolute;
   content: "\f007";
   font-family: "FontAwesome";
@@ -80,7 +80,7 @@ body {
   font-size: 18px;
   text-align: center;
 }
-.header nav ul li:nth-child(4) a::before {
+.header nav ul li.mon-panier a::before {
   position: absolute;
   content: "\f07a";
   font-family: "FontAwesome";
@@ -215,6 +215,10 @@ main > .container::after {
   color: #8d8d8d;
   margin-bottom: 10px;
 }
+.section__top li + li::before {
+  content: '>';
+  padding-right: 3px;
+}
 .section__top a:hover {
   text-decoration: underline;
 }
@@ -287,6 +291,7 @@ main > .container::after {
   position: relative;
   margin-left: 10px;
   text-decoration: underline;
+  white-space: nowrap;
 }
 .section__info a::after {
   position: absolute;
