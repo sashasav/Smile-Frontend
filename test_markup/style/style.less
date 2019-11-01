@@ -24,15 +24,19 @@ body {
     margin: 0 auto;
 }
 
+.a-button {
+
+}
+
 .button.button--fill {
-    width: 220px;
-    height: 74px;
+    width: 175px;
+    height: 62px;
     margin: 0;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.button--fill:nth-child(4) .morph-shape svg {
+.button--fill .morph-shape svg {
     fill: @color-secondary;
 }
 
@@ -53,10 +57,10 @@ body {
     font-size: 24px;
     font-weight: 700;
     color: @background-main;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/background-1.png') center;
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/background-1.png') top left;
+    background-size: 2808px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 44px;
 
     .container {
         height: 100%;
@@ -85,33 +89,27 @@ body {
         font-size: 30px;
         line-height: 36px;
         font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: @background-main;
+        margin-bottom: 10px;
 
-        span {
-            text-transform: uppercase;
+        .color-secondary {
             display: block;
-            text-align: center;
-        }
-
-        span.color-main {
-            color: @background-main;
-        }
-
-        span.color-secondary {
             color: @color-secondary;
-            margin-bottom: 23px;
-        }
-
-        .heading-p {
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 24px;
-            color: @background-main;
-            text-align: center;
-            max-width: 620px;
-            margin-left: auto;
-            margin-right: auto;
         }
     }
+
+    .heading-p {
+         font-size: 18px;
+         font-weight: 300;
+         line-height: 24px;
+         color: @background-main;
+         text-align: center;
+         max-width: 620px;
+         margin-left: auto;
+         margin-right: auto;
+     }
 
     .heading-btn {
         background-color: @color-secondary;
@@ -205,7 +203,7 @@ nav {
 .bt-nav {
     display: block;
     position: absolute;
-    right: 13px;
+    right: 15px;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -259,8 +257,8 @@ h2 {
     letter-spacing: 7.2px;
     text-align: center;
     position: relative;
-    padding-bottom: 29px;
-    margin-bottom: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 23px;
 
     &::after {
         position: absolute;
@@ -442,12 +440,12 @@ h2 {
 
 @media screen and (max-width: 767px) {
     .container {
-        padding: 15px 15px 0;
+        padding: 20px 23px 0;
     }
 
     .section-main {
         a.logo {
-            margin-bottom: 55px;
+            margin-bottom: 40px;
             width: 64px;
             height: 64px;
             line-height: 19px;
@@ -455,7 +453,7 @@ h2 {
         }
 
         .heading-p {
-            margin-bottom: 30px;
+            margin-bottom: 19px;
         }
 
         .heading-btn {
@@ -486,14 +484,15 @@ h2 {
     }
 
     .bt-nav {
-        top: 31px;
+        top: 34px;
+        transform: scale(.8);
     }
 
 }
 
 @media screen and (min-width: 768px) {
     .container {
-        padding: 42px 15px 0;
+        padding: 42px 34px 0;
     }
 
     .section-main {
@@ -508,10 +507,8 @@ h2 {
         }
 
         .main-heading {
-            span {
-                font-size: 70px;
-                line-height: 72px;
-            }
+            font-size: 70px;
+            line-height: 72px;
         }
 
         .heading-p {
