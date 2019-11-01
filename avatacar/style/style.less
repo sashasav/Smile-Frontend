@@ -1,0 +1,360 @@
+@import 'variables.less';
+
+body {
+    background-color: @background-body;
+    color: @color-body;
+    font-family: @font-main;
+}
+
+.clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+.transform(@trans: translateY(-50%)) {
+    -webkit-transform: @trans;
+    -ms-transform: @trans;
+    transform: @trans;
+}
+
+.container {
+    padding: 0 24px;
+}
+
+.fa-before(@icon) {
+    &::before {
+        position: absolute;
+        content: @icon;
+        font-family: "FontAwesome";
+        font-weight: normal;
+        font-style: normal;
+        top: 0;
+        left: 0;
+        right: 0;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.fa-after(@icon) {
+    &::after {
+        position: absolute;
+        content: @icon;
+        font-family: "FontAwesome";
+        font-weight: normal;
+        font-style: normal;
+        top: 50%;
+        // transform: translateY(-50%);
+        right: 0;
+        font-size: 18px;
+        text-align: center;
+        .transform;
+    }
+}
+
+.border-radius(@radius) {
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+
+.header {
+    border-bottom: 1px solid @color-border-main;
+
+    .container {
+        .clearfix;
+    }
+
+    &__logo {
+        display: inline-block;
+        padding: 8px 0;
+        float: left;
+    }
+
+    nav {
+        float: right;
+        font-size: 12px;
+        line-height: 21px;
+        ul {
+            padding: 8px 0 4px;
+            li {
+                display: inline-block;
+                margin-left: 22px;
+                
+                a {
+                    padding-top: 18px;
+                    position: relative;
+                    display: inline-block;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &.contact a {
+                    .fa-before("\f025");
+                }
+                
+                &.garages a {
+                    .fa-before("\f041");
+                }
+                
+                &.mon-compte a {
+                    .fa-before("\f007");
+                }
+                
+                &.mon-panier a {
+                    .fa-before("\f07a");
+                }
+            }
+        }
+    }
+}
+
+main > .container {
+    .clearfix;
+    padding-right: 0;
+}
+
+.aside {
+    border-right: 1px solid @color-border-main;
+    width: 296px;
+    font-size: 18px;
+    padding: 17px 24px 0 0;
+    float: left;
+
+    &__header {
+        position: relative;
+        padding-left: 44px;
+        margin-bottom: 35px;
+        &::before {
+            content: url('../assets/logo-renault.png');
+            position: absolute;
+            left: 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 700;
+        }    
+    }
+
+    &__car-img {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    form {
+        margin: 0 -24px;
+        position: relative;
+        margin-bottom: 18px;
+        color: @color-search;
+        .fa-before("\f002");
+        .fa-after("\f105");
+        &::before {
+            left: 24px;
+            right: auto;
+            top: 50%;
+            // transform: translateY(-50%);
+            .transform;
+        }
+        &::after {
+            right: 24px;
+        }
+
+    }
+
+    input {
+        background-color: @color-border-main;
+        border: none;
+        height: 45px;
+        width: 100%;
+        padding: 0 24px 0 57px;
+    }
+
+    li {
+        margin-bottom: 30px;
+        position: relative;
+        .fa-after("\f105");
+
+        a {
+            display: inline-block;
+            width: 100%;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.section {
+    overflow: hidden;
+    font-size: 16px;
+
+    article {
+        border-bottom: 1px solid @border-main;
+    }
+
+    &__top {
+        padding: 17px 24px 0;
+
+        li {
+            display: inline-block;
+            color: @color-search;
+            margin-bottom: 10px;
+            &+li::before {
+                content: '>';
+                padding-right: 3px;
+            }
+        }
+
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 40px;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__recharge {
+        padding: 20px 24px 30px 236px;
+        .clearfix;
+
+        &:last-child {
+            margin-bottom: 140px;
+        }
+    }
+
+    &__info {
+        float: left;
+        width: 350px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 11px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 700;
+            background-color: @background-recharge1;
+            text-align: center;
+            color: @background-body;
+            padding: 2px 0;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 17px;
+            position: relative;
+            .fa-before("\f067");
+            &::before {
+                right: auto;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: @color-section__info-a;
+            padding: 0 13px 2px 0;
+            position: relative;
+            margin-left: 10px;
+            text-decoration: underline;
+            white-space: nowrap;
+            .fa-after("\f107");
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__price {
+        overflow: hidden;
+        text-align: right;
+
+        h3 {
+            color: @color-section__price;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        span {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        a {
+            display: inline-block;
+            background-color: @color-section__price-a;
+            padding: 12px 24px;
+            color: @background-body;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            text-align: center;
+            margin-left: 10px;
+            .border-radius(4px);
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            font-size: 13px;
+            color: @color-section__price;
+            padding-left: 14px;
+            position: relative;
+            display: inline-block;
+            .fa-before("\f111");
+            &::before {
+                color: @color-section__price-a;
+                right: auto;
+                font-size: 11px;
+                top: 50%;
+                // transform: translateY(-50%);
+                .transform;
+            }
+        }
+    }
+
+    .recharge1,
+    .recharge2 {
+        background-image: url(../assets/recharge1.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: auto;
+    }
+    .recharge2 {
+        background-image: url(../assets/recharge2.png);
+
+        h4 {
+            background-color: @background-recharge2;
+        }
+    }
+}
+
+

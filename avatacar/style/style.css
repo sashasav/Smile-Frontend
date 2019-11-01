@@ -1,0 +1,382 @@
+body {
+  background-color: #ffffff;
+  color: #5a5e60;
+  font-family: 'Titillium Web', sans-serif;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  padding: 0 24px;
+}
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.header .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.header__logo {
+  display: inline-block;
+  padding: 8px 0;
+  float: left;
+}
+.header nav {
+  float: right;
+  font-size: 12px;
+  line-height: 21px;
+}
+.header nav ul {
+  padding: 8px 0 4px;
+}
+.header nav ul li {
+  display: inline-block;
+  margin-left: 22px;
+}
+.header nav ul li a {
+  padding-top: 18px;
+  position: relative;
+  display: inline-block;
+}
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+.header nav ul li.contact a::before {
+  position: absolute;
+  content: "\f025";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.header nav ul li.garages a::before {
+  position: absolute;
+  content: "\f041";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.header nav ul li.mon-compte a::before {
+  position: absolute;
+  content: "\f007";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.header nav ul li.mon-panier a::before {
+  position: absolute;
+  content: "\f07a";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+main > .container {
+  padding-right: 0;
+}
+main > .container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.aside {
+  border-right: 1px solid #e5e5e5;
+  width: 296px;
+  font-size: 18px;
+  padding: 17px 24px 0 0;
+  float: left;
+}
+.aside__header {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 35px;
+}
+.aside__header::before {
+  content: url('../assets/logo-renault.png');
+  position: absolute;
+  left: 0;
+}
+.aside__header p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.aside__car-img img {
+  display: block;
+  margin: 0 auto;
+}
+.aside form {
+  margin: 0 -24px;
+  position: relative;
+  margin-bottom: 18px;
+  color: #8d8d8d;
+}
+.aside form::before {
+  position: absolute;
+  content: "\f002";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.aside form::after {
+  position: absolute;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 50%;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.aside form::before {
+  left: 24px;
+  right: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.aside form::after {
+  right: 24px;
+}
+.aside input {
+  background-color: #e5e5e5;
+  border: none;
+  height: 45px;
+  width: 100%;
+  padding: 0 24px 0 57px;
+}
+.aside li {
+  margin-bottom: 30px;
+  position: relative;
+}
+.aside li::after {
+  position: absolute;
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 50%;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.aside li a {
+  display: inline-block;
+  width: 100%;
+}
+.aside li a:hover {
+  text-decoration: underline;
+}
+.section {
+  overflow: hidden;
+  font-size: 16px;
+}
+.section article {
+  border-bottom: 1px solid #b5babc;
+}
+.section__top {
+  padding: 17px 24px 0;
+}
+.section__top li {
+  display: inline-block;
+  color: #8d8d8d;
+  margin-bottom: 10px;
+}
+.section__top li + li::before {
+  content: '>';
+  padding-right: 3px;
+}
+.section__top a:hover {
+  text-decoration: underline;
+}
+.section__top h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 26px;
+}
+.section__top p {
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.section__recharge {
+  padding: 20px 24px 30px 236px;
+}
+.section__recharge::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.section__recharge:last-child {
+  margin-bottom: 140px;
+}
+.section__info {
+  float: left;
+  width: 350px;
+}
+.section__info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+.section__info h4 {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #d8b12b;
+  text-align: center;
+  color: #ffffff;
+  padding: 2px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.section__info li {
+  margin-bottom: 15px;
+  padding-left: 17px;
+  position: relative;
+}
+.section__info li::before {
+  position: absolute;
+  content: "\f067";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.section__info li::before {
+  right: auto;
+}
+.section__info li:last-child {
+  margin-bottom: 0;
+}
+.section__info a {
+  color: #79ac3d;
+  padding: 0 13px 2px 0;
+  position: relative;
+  margin-left: 10px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.section__info a::after {
+  position: absolute;
+  content: "\f107";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 50%;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.section__info a:hover {
+  text-decoration: none;
+}
+.section__price {
+  overflow: hidden;
+  text-align: right;
+}
+.section__price h3 {
+  color: #3a3e3f;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.section__price span {
+  font-size: 36px;
+  font-weight: 700;
+}
+.section__price a {
+  display: inline-block;
+  background-color: #7aac3f;
+  padding: 12px 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.section__price a:hover {
+  text-decoration: underline;
+}
+.section__price p {
+  font-size: 13px;
+  color: #3a3e3f;
+  padding-left: 14px;
+  position: relative;
+  display: inline-block;
+}
+.section__price p::before {
+  position: absolute;
+  content: "\f111";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.section__price p::before {
+  color: #7aac3f;
+  right: auto;
+  font-size: 11px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.section .recharge1,
+.section .recharge2 {
+  background-image: url(../assets/recharge1.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+}
+.section .recharge2 {
+  background-image: url(../assets/recharge2.png);
+}
+.section .recharge2 h4 {
+  background-color: #48a889;
+}
