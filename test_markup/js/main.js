@@ -213,3 +213,15 @@ map.addLayer(markers);
 markers.addMarker(new OpenLayers.Marker(position));
 
 map.setCenter(position, zoom);
+
+$("#contact-form").validate();
+
+
+// $('.err-holder').change(function() {
+//     if ($('.err-holder').next().hasClass('error')) {
+//         console.log('adadsadad');
+//         $('.err-holder').addClass('border-error');
+//     } else {
+//         console.log('nonononono');
+//     }
+// });

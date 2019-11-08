@@ -438,15 +438,28 @@ h2::after {
   margin-bottom: 29px;
   text-align: center;
 }
+.section-contact .contact-form-wrapper .contact-form .input-name,
+.section-contact .contact-form-wrapper .contact-form .input-email {
+  z-index: 2;
+}
+.section-contact .contact-form-wrapper .contact-form .err-relative,
+.section-contact .contact-form-wrapper .contact-form textarea {
+  position: relative;
+}
 .section-contact .contact-form-wrapper .contact-form input,
 .section-contact .contact-form-wrapper .contact-form textarea {
   background-color: #3c3c41;
   opacity: .8;
-  border: none;
+  border-color: transparent;
   width: 100%;
   margin-bottom: 10px;
   height: 50px;
   padding: 10px 22px;
+  color: #ffffff;
+}
+.section-contact .contact-form-wrapper .contact-form input.border-error,
+.section-contact .contact-form-wrapper .contact-form textarea.border-error {
+  border-color: #ff6347;
 }
 .section-contact .contact-form-wrapper .contact-form input::-webkit-input-placeholder,
 .section-contact .contact-form-wrapper .contact-form textarea::-webkit-input-placeholder {
@@ -485,6 +498,13 @@ h2::after {
   margin-bottom: 5px;
   resize: none;
 }
+.section-contact .contact-form-wrapper .contact-form label.error {
+  color: #ff6347;
+  display: inline-block;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 0;
+}
 .section-contact .contact-form-wrapper .contact-form .button.button--fill {
   position: absolute;
   width: 100%;
@@ -517,6 +537,10 @@ h2::after {
 }
 .section-contact .contact-icons li:last-child {
   margin-right: 0;
+}
+.section-contact .olControlZoom,
+.section-contact .olAlphaImg {
+  opacity: 0;
 }
 footer {
   font-weight: 300;
@@ -740,11 +764,22 @@ footer .footer-line {
     padding: 0 40px;
     text-align: justify;
   }
+  .section-contact .contact-form-wrapper .contact-form fieldset p.input-name,
+  .section-contact .contact-form-wrapper .contact-form fieldset p.input-email {
+    width: 48%;
+    display: inline-block;
+    float: left;
+  }
+  .section-contact .contact-form-wrapper .contact-form fieldset p.input-email {
+    float: right;
+  }
+  .section-contact .contact-form-wrapper .contact-form fieldset p.input-textarea {
+    display: block;
+  }
   .section-contact .contact-form-wrapper .contact-form fieldset legend {
     margin-bottom: 35px;
   }
   .section-contact .contact-form-wrapper .contact-form fieldset input {
-    width: 48%;
     margin-bottom: 20px;
   }
   .section-contact .contact-form-wrapper .contact-form fieldset textarea {

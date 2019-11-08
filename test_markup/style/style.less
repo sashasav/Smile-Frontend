@@ -504,15 +504,30 @@ h2 {
                 text-align: center;
             }
 
+            .input-name,
+            .input-email {
+                z-index: 2;
+            }
+
+            .err-relative,
+            textarea{
+                position: relative;
+            }
+
             input,
             textarea {
                 background-color: @contact-form-input-background;
                 opacity: .8;
-                border: none;
+                border-color: transparent;
                 width: 100%;
                 margin-bottom: 10px;
                 height: 50px;
                 padding: 10px 22px;
+                color: @background-main;
+
+                &.border-error {
+                    border-color: @contact-form-error-color;
+                }
 
                 &::placeholder {
                     font-style: italic;
@@ -527,6 +542,14 @@ h2 {
                 height: 130px;
                 margin-bottom: 5px;
                 resize: none;
+            }
+
+            label.error {
+                color: @contact-form-error-color;
+                display: inline-block;
+                margin-bottom: 20px;
+                position: absolute;
+                left: 0;
             }
 
             .button.button--fill {
@@ -568,6 +591,11 @@ h2 {
                  margin-right: 0;
              }
          }
+    }
+
+    .olControlZoom,
+    .olAlphaImg {
+        opacity: 0;
     }
 }
 
@@ -730,7 +758,6 @@ footer {
             margin-bottom: 16px;
         }
     }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -862,12 +889,30 @@ footer {
                     padding: 0 40px;
                     text-align: justify;
 
+
+                    p {
+                        &.input-name,
+                        &.input-email {
+                            width: 48%;
+                            display: inline-block;
+                            float: left;
+                        }
+
+                        &.input-email {
+                            float: right;
+                        }
+
+                        &.input-textarea {
+                            display: block;
+                        }
+                    }
+
                     legend {
                         margin-bottom: 35px;
                     }
 
                     input {
-                        width: 48%;
+                        //width: 48%;
                         margin-bottom: 20px;
                     }
 

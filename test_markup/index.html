@@ -209,12 +209,12 @@
             <div id="Map" class="contact-map"></div>
 
             <div class="container">
-                <form class="contact-form" action="">
+                <form class="contact-form" id="contact-form" action="">
                     <fieldset>
                         <legend>Leave us a note</legend>
-                        <input name="form-name" id="form-name" type="text" placeholder="Your name">
-                        <input name="form-email" id="form-email" type="email" placeholder="Your mail">
-                        <textarea name="form-textarea" id="form-textarea" placeholder="Your message"></textarea>
+                        <p class="input-name err-relative"><input class="err-holder" name="form-name" id="form-name" type="text" placeholder="Your name" required></p>
+                        <p class="input-email err-relative"><input class="err-holder" name="form-email" id="form-email" type="email" placeholder="Your mail" required></p>
+                        <p class="input-textarea err-relative"><textarea class="err-holder" name="form-textarea" id="form-textarea" placeholder="Your message" required></textarea></p>
 
 <!--                            <input type="submit" value="SEND">-->
                             <button class="button button--fill button--effect-2">
@@ -268,6 +268,8 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="js/snap.svg-min.js"></script>
     <script src="OpenLayers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 
     <script src="./js/main.js"></script>
 
