@@ -457,10 +457,6 @@ h2::after {
   padding: 10px 22px;
   color: #ffffff;
 }
-.section-contact .contact-form-wrapper .contact-form input.border-error,
-.section-contact .contact-form-wrapper .contact-form textarea.border-error {
-  border-color: #ff6347;
-}
 .section-contact .contact-form-wrapper .contact-form input::-webkit-input-placeholder,
 .section-contact .contact-form-wrapper .contact-form textarea::-webkit-input-placeholder {
   font-style: italic;
@@ -498,12 +494,16 @@ h2::after {
   margin-bottom: 5px;
   resize: none;
 }
+.section-contact .contact-form-wrapper .contact-form .err-holder.error {
+  border-color: #ff6347;
+}
 .section-contact .contact-form-wrapper .contact-form label.error {
   color: #ff6347;
   display: inline-block;
   margin-bottom: 20px;
   position: absolute;
   left: 0;
+  padding: 3px;
 }
 .section-contact .contact-form-wrapper .contact-form .button.button--fill {
   position: absolute;

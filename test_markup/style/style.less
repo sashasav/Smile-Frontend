@@ -525,10 +525,6 @@ h2 {
                 padding: 10px 22px;
                 color: @background-main;
 
-                &.border-error {
-                    border-color: @contact-form-error-color;
-                }
-
                 &::placeholder {
                     font-style: italic;
                     font-size: 15px;
@@ -544,12 +540,19 @@ h2 {
                 resize: none;
             }
 
+            .err-holder {
+                &.error {
+                    border-color: @contact-form-error-color;
+                }
+            }
+
             label.error {
                 color: @contact-form-error-color;
                 display: inline-block;
                 margin-bottom: 20px;
                 position: absolute;
                 left: 0;
+                padding: 3px;
             }
 
             .button.button--fill {

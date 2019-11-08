@@ -214,14 +214,24 @@ markers.addMarker(new OpenLayers.Marker(position));
 
 map.setCenter(position, zoom);
 
-$("#contact-form").validate();
+// jquery Validate
 
-
-// $('.err-holder').change(function() {
-//     if ($('.err-holder').next().hasClass('error')) {
-//         console.log('adadsadad');
-//         $('.err-holder').addClass('border-error');
-//     } else {
-//         console.log('nonononono');
-//     }
-// });
+$(document).ready(function () {
+    $("#contact-form").validate({
+        rules: {
+            formName: {
+                required: true
+            },
+            formEmail: {
+                required: true
+            },
+            formTextarea: {
+                required: true
+            }
+        },
+        submitHandler: function (form) { // for demo
+            alert('valid form submitted'); // for demo
+            return false; // for demo
+        }
+    });
+});
