@@ -124,7 +124,7 @@ nav.pos-fixed {
   display: block;
   opacity: 1;
   -webkit-transform: translateX(-20px);
-  z-index: 2;
+  z-index: 3;
 }
 nav ul {
   list-style: none;
