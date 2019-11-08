@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="./style/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="style/fontawesome-free-5.11.2-web/css/all.css">
     <link rel="stylesheet" href="./style/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./style/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&display=swap" rel="stylesheet">
@@ -21,13 +22,13 @@
                 <span>te<br>st</span>
             </a>
 
-            <div class="nav">
+            <div class="nav open">
                 <nav>
                     <ul>
-                        <li><a href="#nav-home"><span data-hover="home">home</span></a></li>
-                        <li><a href="#nav-about"><span data-hover="about">about</span></a></li>
-                        <li><a href="#nav-portfolio"><span data-hover="portfolio">portfolio</span></a></li>
-                        <li><a href="#nav-contact"><span data-hover="contact">contact</span></a></li>
+                        <li><a class="a-scroll" href="#nav-home"><span data-hover="home">home</span></a></li>
+                        <li><a class="a-scroll" href="#nav-about"><span data-hover="about">about</span></a></li>
+                        <li><a class="a-scroll" href="#nav-portfolio"><span data-hover="work">work</span></a></li>
+                        <li><a class="a-scroll" href="#nav-contact"><span data-hover="contact">contact</span></a></li>
                     </ul>
                 </nav>
                 <div class="bt-nav">
@@ -37,24 +38,22 @@
                 </div>
             </div>
 
-            <div class="main-heading">
-                <span class="color-main">yOUR NAME IS A</span>
+            <h1 class="main-heading">
+                yOUR NAME IS A
                 <span class="color-secondary">creative agency</span>
-                <p class="heading-p">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
-            </div>
+            </h1>
+            <p class="heading-p">This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.</p>
 
-<!--            <a href="#" class="btn heading-btn">-->
-<!--                LEARN MORE-->
-<!--            </a>-->
-
-            <button class="button button--fill button--effect-2">
-							<span class="morph-shape" data-morph-active="M286,113c0,0-68.8,6-136,6c-78.2,0-137-6-137-6S6,97.198,6,62.5C6,33.999,13,12,13,12s59-7,137-7c85,0,136,7,136,7s8,17.598,8,52C294,96.398,286,113,286,113z">
-								<svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
-									<path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
-								</svg>
-							</span>
-                <span class="button__text">LEARN MORE</span>
-            </button>
+            <a class="a-button a-scroll" href="#nav-about">
+                <button class="button button--fill button--effect-2">
+                                <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,6-136,6c-78.2,0-137-6-137-6S6,97.198,6,62.5C6,33.999,13,12,13,12s59-7,137-7c85,0,136,7,136,7s8,17.598,8,52C294,96.398,286,113,286,113z">
+                                    <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                        <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
+                                    </svg>
+                                </span>
+                    <span class="button__text">LEARN MORE</span>
+                </button>
+            </a>
         </div>
 
     </section>
@@ -66,47 +65,65 @@
 
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <div class="item-about about-img-1"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-1" src="img/about-img-1.png" alt="about-1">
+                    </div>
                     <h4>LOREM IPSUM</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-2"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-2" src="img/about-img-2.png" alt="about-2">
+                    </div>
                     <h4>Dolor sit amet</h4>
                     <p class="item-p">Shah Rukh Khan's acting career has spanned over two decades. Khan made his screen debut with the Doordarshan television series Fauji (1988), which led to roles in other television shows and offers to act in film.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-3"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-3" src="img/about-img-3.png" alt="about-3">
+                    </div>
                     <h4>Some heading</h4>
                     <p class="item-p">A report strongly criticizing the use of torture by the United States Central Intelligence Agency is released by the Senate Intelligence Committee.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-4"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-4" src="img/about-img-4.jpg" alt="about-4">
+                    </div>
                     <h4>Some heading4</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-5"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-5" src="img/about-img-5.jpg" alt="about-5">
+                    </div>
                     <h4>Some heading5</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-6"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-6" src="img/about-img-6.jpeg" alt="about-6">
+                    </div>
                     <h4>Some heading6</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-7"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-7" src="img/about-img-7.jpeg" alt="about-7">
+                    </div>
                     <h4>Some heading7</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-8"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-8" src="img/about-img-8.jpeg" alt="about-8">
+                    </div>
                     <h4>Some heading8</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
                 <div class="item">
-                    <div class="item-about about-img-9"></div>
+                    <div class="item-about-img-wrapper">
+                        <img class="item-about about-img-9" src="img/about-img-9.jpeg" alt="about-9">
+                    </div>
                     <h4>Some heading9</h4>
                     <p class="item-p">Slow lorises are a group of several species of strepsirrhine primates. Found in South and Southeast Asia, they range from Bangladesh and Northeast India in the west to the Philippines in the east, and from the Yunnan province in China in the north to the island of Java in the south.</p>
                 </div>
@@ -186,46 +203,73 @@
     <section class="section-contact" id="nav-contact">
         <div class="container">
             <h2>contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum natus placeat, praesentium provident qui rem saepe. Accusantium adipisci culpa, doloremque eum necessitatibus numquam, optio qui repellat similique ullam voluptatem!</p>
-
         </div>
+
+        <div class="contact-form-wrapper">
+            <div id="Map" class="contact-map"></div>
+
+            <div class="container">
+                <form class="contact-form" id="contact-form" action="">
+                    <fieldset>
+                        <legend>Leave us a note</legend>
+                        <p class="input-name err-relative"><input class="err-holder" name="formName" id="form-name" type="text" placeholder="Your name" required></p>
+                        <p class="input-email err-relative"><input class="err-holder" name="formEmail" id="form-email" type="email" placeholder="Your mail" required></p>
+                        <p class="input-textarea err-relative"><textarea class="err-holder" name="formTextarea" id="form-textarea" placeholder="Your message" required></textarea></p>
+
+<!--                            <input type="submit" value="SEND">-->
+                            <button type="submit" class="button button--fill button--effect-2">
+                                <span class="morph-shape" data-morph-active="M286,113c0,0-68.8,6-136,6c-78.2,0-137-6-137-6S6,97.198,6,62.5C6,33.999,13,12,13,12s59-7,137-7c85,0,136,7,136,7s8,17.598,8,52C294,96.398,286,113,286,113z">
+                                    <svg width="100%" height="100%" viewBox="0 0 300 125" preserveAspectRatio="none">
+                                        <path d="M286,113c0,0-68.8,0-136,0c-78.2,0-137,0-137,0s0-15.802,0-50.5C13,33.999,13,12,13,12s59,0,137,0c85,0,136,0,136,0s0,17.598,0,52C286,96.398,286,113,286,113z"/>
+                                    </svg>
+                                </span>
+                                <span class="button__text">SEND</span>
+                            </button>
+
+                    </fieldset>
+                </form>
+
+                <ul class="contact-icons">
+                    <li><a class="contact-icon twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="contact-icon facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="contact-icon instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a class="contact-icon google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a class="contact-icon linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a class="contact-icon pinterest" href="#"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a class="contact-icon tumblr" href="#"><i class="fab fa-tumblr"></i></a></li>
+                </ul>
+
+            </div>
+        </div>
+
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container clearfix">
+            <a href="#" class="location">123 Main Street city, AB 0123<br>
+                345 Not Main Street city,<br>
+                CD 4567
+            </a>
+            <ul class="mail">
+                <li><a href="mailto: myemail@example.com">myemail@example.com</a></li>
+                <li><a href="mailto: heremail@sample.com">heremail@sample.com</a></li>
+            </ul>
+            <ul class="phone">
+                <li><a href="tel: +380123456789">012-345-6789</a></li>
+                <li><a href="tel: +38025-698-9658">025-698-9658</a></li>
+            </ul>
+            <span class="footer-line"></span>
+            <span class="copyright">©  Itembridge, 2014.</span>
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./style/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/isotope.js"></script>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="js/snap.svg-min.js"></script>
+    <script src="OpenLayers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
 
     <script src="./js/main.js"></script>
 
