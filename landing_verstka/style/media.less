@@ -1,65 +1,92 @@
 @import './variables.less';
 
+@media screen and (min-width: 350px) {
+    .header__a:first-child {
+        margin-right: 34px;
+    }
+}
+
 @media screen and (min-width: 600px) {
-    .header__inner {
-        display: flex;
-        justify-content: space-between;
-    }
-    .header__inner_left,
-    .header__inner_right {
-        margin: 0;
-    }
-    .header__inner_left {
-        padding: 8px;
-    }
-    .header__a {
-        display: inline-block;
-        padding-right: 20px;
-    }
-    .header__menu-btn {
-        display: none;
-    }
-    .header__ul {
-        display: block !important;
-    }
-    .header__li {
-        display: inline-block;
-        border: 1px solid transparent;
-    }
-    .header__bottom {
-        padding: 30px 0;
+    .header {
+        &__inner {
+            &::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            &_left {
+                float: left;
+            }
+
+            &_right {
+                float: right;
+            }
+        }
+
+        &__bottom {
+            margin-bottom: 25px;
+        }
+
+        &__nav {
+            position: static;
+            float: right;
+        }
+
+        &__menu-btn {
+            display: none;
+        }
+
+        ul {
+            display: block;
+        }
+
+        li {
+            display: inline-block;
+            border: 1px solid transparent;
+            padding-right: 20px;
+            margin-right: 12px;
+            &:last-child {
+                margin-right: 0;
+            }
+            // float: right;
+        }
+        
+        &__logo {
+            display: inline;
+            // float: left;
+        }
+
     }
 }
 
 @media screen and (min-width: 750px) {
-    .slider__title {
-        margin-top: 80px;
+    .slider__box {
+        padding: 10px 50px;
     }
-    .slider__btn {
-        margin-bottom: 140px;
+
+    .services {
+        &__bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item {
+            margin: 15px;
+            padding: 20px 10px 140px;
+            max-width: 360px;
+        }
+        &__footer {
+            display: block;
+        }
+        &__a {
+            display: block;
+            padding-bottom: 20px;
+        }
+        &__main-btn {
+            display: block;
+        }
     }
-    .services__bottom {
-        display: flex;
-        justify-content: space-between;
-    }
-    .services__item {
-        margin: 15px;
-        padding: 20px 10px 140px;
-        max-width: 360px;
-    }
-    .services__footer {
-        display: block;
-    }
-    .services__a {
-        display: block;
-        padding-bottom: 20px;
-    }
-    .services__main-btn {
-        display: block;
-    }
-    .slider__inner {
-        position: relative;
-    }
+    
     .owl-prev,
     .owl-next {
         display: block;
@@ -90,22 +117,20 @@
         max-width: 1140px;
         margin: 0 auto;
     }
-    .slider__title {
-        margin-top: 130px;
-    }
+
     .slider__text {
-        margin: 25px auto 45px;
         max-width: 610px;
     }
-    .slider__btn {
-        margin-bottom: 190px;
-    }
-    .services__footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center
-    }
-    .services__a {
-        padding-bottom: 0;
+    
+    .services {
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+    
+        &__a {
+            padding-bottom: 0;
+        }
     }
 }
