@@ -75,7 +75,7 @@ a {
         li {
             display: inline-block;
             text-transform: uppercase;
-            padding: 10px;
+            padding: 0;
         }
     }
 
@@ -89,6 +89,14 @@ a {
                 line-height: 27px;
                 letter-spacing: 3.5px;
 
+                a {
+                    padding: 10px;
+                    transition: all .5s;
+
+                    &:hover {
+                        background-color: @section-collection-mens-suits-background-opacity-hover;
+                    }
+                }
             }
 
             &:not(:last-child) {
@@ -125,7 +133,7 @@ a {
             font-size: 20px;
             font-weight: 700;
             padding: 0;
-            left: -20px;
+            left: -10px;
             bottom: 5px;
 
             &::before {
@@ -304,6 +312,11 @@ a {
                     line-height: 51px;
                     position: relative;
                     padding-bottom: 10px;
+                    transition: all .5s;
+
+                    &:hover {
+                        color: @section-collection-mens-suits-background-opacity;
+                    }
 
                     &::before,
                     &::after {
@@ -377,6 +390,13 @@ a {
             line-height: 51px;
             padding: 18px 31px;
             border: 4px solid @background-main;
+            transition: all .5s;
+
+            &:hover {
+                background-color: @background-main;
+                border-color: @stock-small-title-color;
+                color: @stock-small-title-color;
+            }
         }
     }
 }
@@ -452,9 +472,14 @@ a {
                             font-weight: 500;
                             margin: 0 auto;
                             background-color: transparent;
-                            border-color: transparent;
+                            border: 2px solid transparent;
                             border-bottom: 2px solid @stock-title-color;
                             padding: 0;
+                            transition: all .5s;
+
+                            &:hover {
+                                border: 2px solid @stock-title-color;
+                            }
                         }
                     }
                 }
@@ -543,6 +568,12 @@ a {
                 padding: 3px 37px;
                 position: absolute;
                 bottom: 0;
+                transition: all .5s;
+
+                &:hover {
+                    background-color: @stock-title-color;
+                    color: @background-main;
+                }
             }
         }
     }
@@ -561,6 +592,11 @@ a {
     .credit {
         width: 49%;
         padding: 40px;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(.95);
+        }
     }
 
     .order {
@@ -670,6 +706,12 @@ a {
             padding: 3px 23px;
             border: 2px solid @background-main;
             line-height: 51px;
+            transition: all .5s;
+
+            &:hover {
+                background-color: @background-main;
+                color: @section-delivery-order-background;
+            }
         }
     }
 
