@@ -242,6 +242,11 @@ a {
 .section-collection .collection-secondary.t-shirt {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), center / cover no-repeat url('../img/collection-1.png');
   background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), center / cover no-repeat url('../img/collection-1.png');
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.section-collection .collection-secondary.t-shirt:hover {
+  background: center / cover no-repeat url('../img/collection-1.png');
 }
 .section-collection .collection-secondary.summer-specials {
   background: center / cover no-repeat url('../img/collection-4.png');
@@ -309,12 +314,22 @@ a {
   background: linear-gradient(rgba(70, 163, 191, 0.7), rgba(70, 163, 191, 0.7)), center / cover no-repeat url('../img/collection-2.png');
   padding: 85px 85px;
   text-align: left;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.section-collection .collection-main.new-summer:hover {
+  background: center / cover no-repeat url('../img/collection-2.png');
 }
 .section-collection .collection-main.mens-suits {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(220, 83, 82, 0.7)), to(rgba(220, 83, 82, 0.7))), center / cover no-repeat url('../img/collection-3.png');
   background: linear-gradient(rgba(220, 83, 82, 0.7), rgba(220, 83, 82, 0.7)), center / cover no-repeat url('../img/collection-3.png');
   padding: 70px 50px;
   text-align: right;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+.section-collection .collection-main.mens-suits:hover {
+  background: center / cover no-repeat url('../img/collection-3.png');
 }
 .section-collection .collection-main h3 {
   font-size: 48px;
